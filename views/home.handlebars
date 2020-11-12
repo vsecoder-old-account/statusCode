@@ -1,0 +1,14 @@
+<p>Привет, <b>{{ip}}</b>, проверь ответ сайта, просто добавь к URL ?url=ссылка, например: <a href="?url=https://ya.ru">?url=https://ya.ru</a>, или через <a href="/api/?url=https://github.com">/api/?url=https://github.com</a></a></p>
+<div class="alert alert-primary" role="alert">
+  {{statusCode}}
+</div>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Код html
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body" style="text-align: left;">
+    {{body}}
+  </div>
+</div>
