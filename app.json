@@ -1,0 +1,7 @@
+{
+  "name": "statusCode",
+  "description": "statusCode by vsevolodhtml.",
+  "repository": "https://github.com/htmlcssphpjs/statusCode",
+  "logo": "https://raw.githubusercontent.com/htmlcssphpjs/statusCode/main/public/img/node.png",
+  "keywords": ["nodejs"]
+}
