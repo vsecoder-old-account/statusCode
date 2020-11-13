@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
 		request(href, function (error, response, body) {
 			console.error('error:', error);
 			console.log('statusCode:', response && response.statusCode);
-			//console.log('body:', body);
+			console.log('body:', body);
 			var ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
 			if (error == null) {
 				return res.render('home', { statusCode: response.statusCode, ip: ip, body: body });
@@ -37,7 +37,7 @@ app.get('/', function(req, res) {
 		});
 	} else {
 		var ip = (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
-		return res.render('home', { ip: ip });
+		return res.render('home', { ip: ip, body: 'Пусто? Почитай выше =)', statusCode: '000' });
 	}
 });
 app.get('/api', function(req, res) {
